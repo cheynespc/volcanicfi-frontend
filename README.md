@@ -1,7 +1,24 @@
-# 🥞 Pancake Frontend
+# 🌋 Volcanic Front-end
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7bebf1a3-be7b-4165-afd1-446256acd5e3/deploy-status)](https://app.netlify.com/sites/pancake-prod/deploys)
+This repository contains the main features of the Volcanic Finance application.
 
-This project contains the main features of the pancake application.
+## Project structure
 
-If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
+- **components** contains generic components used inside the application.
+- **views** contains building blocks for each page. The entry point of a view is used as the root component of each route.
+- **config** contains all the config files and ABIs.
+- **state** contains the redux files for the global state of the app.
+- **context** contains global contexts (separated from the redux store)
+- **hooks** contains generic hooks.
+- **utils** contains generic utilities functions.
+
+## Install the dependencies
+
+```shell
+yarn
+yarn start
+```
+
+## Tests
+
+Run tests with `yarn test`
