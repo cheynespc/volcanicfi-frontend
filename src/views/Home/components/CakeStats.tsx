@@ -28,15 +28,15 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
-  const eggPrice = usePriceCakeBusd()
+  const lavaPrice = usePriceCakeBusd()
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0)
   const cakeSupply = getBalanceNumber(circSupply)
-  const marketCap = eggPrice.times(circSupply)
+  const marketCap = lavaPrice.times(circSupply)
   const totalValue = useTotalValue()
 
-  let eggPerBlock = 0
-  if (farms && farms[0] && farms[0].eggPerBlock) {
-    eggPerBlock = new BigNumber(farms[0].eggPerBlock).div(new BigNumber(10).pow(18)).toNumber()
+  let lavaPerBlock = 0
+  if (farms && farms[0] && farms[0].lavaPerBlock) {
+    lavaPerBlock = new BigNumber(farms[0].lavaPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   return (
@@ -57,7 +57,7 @@ const CakeStats = () => {
         </Heading>
         <Row>
           <Text fontSize="14px">{TranslateString(10101, 'Price per $LAVA')}</Text>
-          <CardValue fontSize="14px" value={getBalanceNumber(eggPrice)} decimals={4} prefix="$" />
+          <CardValue fontSize="14px" value={getBalanceNumber(lavaPrice)} decimals={4} prefix="$" />
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(10005, 'Market Cap')}</Text>
@@ -77,7 +77,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New $LAVA/block')}</Text>
-          <Text bold fontSize="14px">{eggPerBlock}</Text>
+          <Text bold fontSize="14px">{lavaPerBlock}</Text>
         </Row>
       </CardBody>
     </StyledCakeStats>
