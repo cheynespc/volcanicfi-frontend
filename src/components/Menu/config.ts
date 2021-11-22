@@ -73,31 +73,31 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Github',
-        href: 'https://github.com/.../', // fix
+        href: 'https://github.com/volcanicfi', // fix
       },
-      {
-        label: 'Blog',
-        href: 'https://....medium.com/', // fix
-      },
+      // {
+      //   label: 'Blog',
+      //   href: 'https://....medium.com/', // fix
+      // },
     ],
-  },
-
-  {
-    label: 'Telegram',
-    icon: 'TelegramIcon',
-    href: 'https://...', // fix
-  },
-
-  {
-    label: 'Discord',
-    icon: 'GroupsIcon',
-    href: 'https://...', // fix
   },
   // {
   //   label: 'Audit',
   //   icon: 'AuditIcon',
   //   href: 'https://...',
   // },
+  {
+    label: 'Telegram',
+    icon: 'TelegramIcon',
+    href: 'https://t.me/VolcanicFi', // fix
+  },
+
+  {
+    label: 'Discord',
+    icon: 'GroupsIcon',
+    href: 'https://discord.gg/d8PKbjCCRa', // fix
+  },
+
 ]
 
 export default config
