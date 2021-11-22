@@ -38,3 +38,6 @@ sftp-config.json
 netlify.toml
 static.json
 tsconfig.json
+.eslintrc
+.prettierrc
+.commitlintrc.json
