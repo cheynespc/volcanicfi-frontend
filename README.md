@@ -1,4 +1,4 @@
-# 🌋 Volcanic Front-end
+# 🌋 Volcanic Frontend
 
 This repository contains the main features of the Volcanic Finance application.
 
